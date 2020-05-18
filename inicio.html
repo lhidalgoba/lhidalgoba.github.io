@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Inicio </title>
+	<link type="text/css" rel="stylesheet" href="css/hoja-estilo.css"/>
+
+</head>
+<body>
+	<nav>
+	<ul>
+	<li class="seleccionado">Inicio</li>
+	<li><a href="nosotros.html">Nosotros</a></li>
+	<li><a href="canciones.html">Canciones</a></li>
+	<li><a href="conciertos.html">Conciertos</a></li>
+	<li><a href="organizr un concierto.html">Organizar un concierto</a></li>
+</ul>
+</nav>
+
+<p>
+	<img id="mostrar-imagen" onclick="cambiarImagen()" src="imagenes/imagen1.png" width="180" height="180"/ >
+	</p> 
+	<p>¡Haz clic para cambiar imágen!</p>
+	<script>
+		function cambiarImagen() {
+			var imagenMostrada = document.getElementById('mostrar-imagen');
+			if (imagenMostrada.src.match("imagenes/imagen1.png")) {
+				imagenMostrada.src = "imagenes/imagen2.png";
+			}
+			else {
+				imagenMostrada.src = "imagenes/imagen1.png";
+			}
+		}
+	</script>
+
+<h1> Somos los´Nanonautas </h1>
+<p>Esta es nuestra página wer. Haz clic en los siguientes enlaces para visitar las siguientes secciones:</p>
+<ul>
+	<li><a href="nosotros.html">Nosotros</a></li>
+	<li><a href="canciones.html">Canciones</a></li>
+	<li><a href="conciertos.html">Conciertos</a></li>
+</ul>
+</body>
+</html>
